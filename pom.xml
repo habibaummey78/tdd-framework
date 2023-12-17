@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.kroger.tdd</groupId>
+	<artifactId>com.kroger.tdd</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Kroger Framework</name>
+	<description>Kroger is a good place for buying fresh vegetables</description>
+
+
+	<dependencies>
+		<!-- Selenium-Java dependency is used to get access of Java based
+		selenium-->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.15.0</version>
+		</dependency>
+
+		<!-- TestNG is used to Test the functionality of the Application-->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
+		</dependency>
+
+		<!-- Webdriver manager is used a s an alternative for chromedriver,
+		geckodriver etc -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.6.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- maven-compiler plugin is used to compile the maven build-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+			<!-- maven-surefire plugin is used to start the building -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
